@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # PostgreSQL ma'lumotlar bazasi bilan ulanish
-engine = create_engine('postgresql+psycopg2://nizom:nizom@localhost:5432/medium_db', echo=True)
+engine = create_engine('postgresql+psycopg2://nizom:nizom@0299@localhost:5432/yaypan_db', echo=True)
 
 Base = declarative_base()
 Session = sessionmaker(bind=engine, expire_on_commit=False)
